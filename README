@@ -1,0 +1,2 @@
+If your model is :timestamped, it will automatically set the
+:created_at and :updated_at columns if they exist
