@@ -1,2 +1,31 @@
 If your model is :timestamped, it will automatically set the
 :created_at and :updated_at columns if they exist
+
+With a migration like:
+
+class MessageMigration < Sequel::Migration
+  def up
+    create_table :messages do
+      primary_key :id
+      integer :user_id
+      string :name
+      boolean :direct
+      datetime :created_at
+      datetime :updated_at
+    end
+  end
+
+  def down
+    execute "DROP TABLE messages"
+  end
+
+end
+
+a class with
+
+class Message < Sequel::Model
+  is :timestamped
+  belongs_to :user
+end
+
+will be autotimestamped
