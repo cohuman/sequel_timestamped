@@ -61,7 +61,7 @@ spec = Gem::Specification.new do |s|
   # change this to the plugin name, if the plugin has command line portion
   #s.executables = ["sequel"]
 
-  s.add_dependency("sequel_model")
+  s.add_dependency("sequel")
   
   s.files = %w(COPYING README Rakefile) + Dir.glob("{bin,doc,spec,lib}/**/*")
   
