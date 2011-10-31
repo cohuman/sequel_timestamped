@@ -1,6 +1,8 @@
 module Sequel
   module Plugins
     module Timestamped
+      VERSION = "0.1.0"
+      
       # Apply the plugin to the model.
       def self.apply(model, options = {})
         model.send(:include, InstanceMethods)

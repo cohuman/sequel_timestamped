@@ -1,0 +1,11 @@
+.gitignore
+CHANGELOG
+COPYING
+lib/sequel_timestamped.rb
+Manifest
+Rakefile
+README
+sequel_timestamped.gemspec
+spec/sequel_timestamped_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
